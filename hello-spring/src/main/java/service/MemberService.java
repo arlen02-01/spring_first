@@ -6,6 +6,8 @@ import java.util.Optional;
 import com.example.hello_spring.domain.Member;
 import com.example.hello_spring.repository.MemberRepository;
 
+import jakarta.transaction.Transactional;
+@Transactional
 public class MemberService {
 	private final MemberRepository memberRepository;
 	
